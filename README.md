@@ -1,15 +1,30 @@
-Welcome to your new dbt project!
+# ⚡ EV Insights DWH – Electric Vehicle Data Warehouse using dbt + EDA
 
-### Using the starter project
+This project builds a modern data warehouse using **dbt**, **Snowflake**, and **EDA** techniques to analyze Electric Vehicle (EV) trends across regions and years.
 
-Try running the following commands:
-- dbt run
-- dbt test
+## Project Overview
 
+- Cleaned and transformed raw EV population and adoption datasets
+- Built staging, intermediate, and mart models using dbt
+- Implemented **data tests**, **snapshots**, and **seeds**
+- Used **Power BI** for data visualization and dashboarding
+- Enables reporting on regional EV trends, adoption rates, infrastructure, and cost comparisons
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+## Tech Stack
+
+- **dbt** for data transformation
+- **Snowflake** as the cloud data warehouse
+- **Power BI** for dashboards and visualizations
+- GitHub for version control
+
+## Project Structure
+
+```bash
+EV/
+├── models/               # dbt models (staging, marts, intermediate)
+├── seeds/                # Raw cleaned seed datasets
+├── snapshots/            # Slowly changing dimension tracking
+├── tests/                # Custom and generic dbt tests
+├── macros/               # Optional: Custom macros
+├── dbt_project.yml       # dbt config
+└── README.md             # Project documentation
