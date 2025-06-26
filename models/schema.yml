@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: ev_mart
+    description: "Mart model with enriched electric vehicle and adoption metrics"
+    columns:
+      - name: state
+        tests:
+          - not_null
+      - name: year
+        tests:
+          - not_null
+      - name: ev_percentage_share
+        description: "Reported EV share from adoption data"
+      - name: calculated_ev_share
+        description: "EV share calculated from ev_vehicles_registered / total_vehicles_registered"
+        tests:
+          - not_null
+      - name: total_ev_registered
+        description: "EVs from vehicle population data"
+      - name: price_difference
+        description: "Difference between avg gasoline vehicle and EV prices"

@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_ev_population
+    columns:
+      - name: vin  # ✅ use the alias used in the model
+        tests:
+          - not_null
+
+  - name: stg_ev_adoption
+    columns:
+      - name: year
+        tests:
+          - not_null

@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: ev_schema  # lowercase and consistent
+    database: EV_DB
+    schema: EV_SCHEMA
+    tables:
+      - name: ev_adoption_dataset
+      - name: electric_vehicle_population_data_clean
